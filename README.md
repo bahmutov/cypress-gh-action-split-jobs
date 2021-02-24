@@ -6,6 +6,8 @@ This example shows how to install all dependencies and build the site in one job
 
 ![Workflow](./images/workflow.png)
 
+Watch video explaining the workflow at [https://youtu.be/62cDLO533OY](https://youtu.be/62cDLO533OY)
+
 [ci image]: https://github.com/bahmutov/cypress-gh-action-split-jobs/workflows/main/badge.svg?branch=main
 [ci url]: https://github.com/bahmutov/cypress-gh-action-split-jobs/actions
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
