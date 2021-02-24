@@ -43,7 +43,8 @@ jobs:
         with:
           name: built
 
-      - run: npm ls
+      - run: ls -la
+      - run: ls -la dist
 
       # reinstall dependencies and run Cypress tests
       - name: Cypress tests 🧪
