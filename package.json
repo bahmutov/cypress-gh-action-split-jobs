@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "local": "start-test dev http-get://localhost:3000 cy:open",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "vite": "2.0.2"
   },
   "devDependencies": {
-    "cypress": "6.5.0"
+    "cypress": "6.5.0",
+    "start-server-and-test": "1.12.0"
   }
 }
