@@ -20,15 +20,19 @@ jobs:
       - name: Build site 🏗
         run: npm run build
 
+      - run: ls -la
+      - run: ls -la dist
+
       # only pass the local folder "dist"
       # TIP: we want to avoid uploading node_modules since it is SLOW
       # https://glebbahmutov.com/blog/parallel-cypress-tests-gh-action/
       - name: Save build folder 🆙
         uses: actions/upload-artifact@v2
+        # https://github.com/actions/upload-artifact#upload-an-entire-directory
         with:
           name: built
-          path: |
-            ./dist
+          if-no-files-found: error
+          path: dist
 
   ui-tests:
     runs-on: ubuntu-20.04
