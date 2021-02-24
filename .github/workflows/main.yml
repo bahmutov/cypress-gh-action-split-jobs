@@ -2,6 +2,7 @@ name: main
 on: [push]
 
 jobs:
+  # this job installs dependencies and builds the "dist" folder
   install:
     runs-on: ubuntu-20.04
     steps:
@@ -9,7 +10,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      # only install dependencies using
+      # only install the dependencies using
       # https://github.com/cypress-io/github-action
       - name: Install 📦
         uses: cypress-io/github-action@v2
@@ -32,8 +33,11 @@ jobs:
         with:
           name: built
           if-no-files-found: error
+          # upload all files in the "dist" folder
           path: dist
 
+  # this job runs after the install job builds the "dist" folder
+  # serves the "dist" folder and runs end-to-end Cypress tests
   ui-tests:
     runs-on: ubuntu-20.04
     needs: install
@@ -47,6 +51,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: built
+          # download all files into "dist" folder
           path: dist
 
       - run: ls -la
