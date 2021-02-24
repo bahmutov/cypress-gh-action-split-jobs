@@ -28,7 +28,7 @@ jobs:
         with:
           name: built
           path: |
-            dist
+            ./dist
 
   ui-tests:
     runs-on: ubuntu-20.04
