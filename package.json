@@ -5,10 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "serve": "vite preview",
-    "local": "start-test dev http-get://localhost:3000 cy:open",
+    "serve": "vite preview --host 0.0.0.0",
+    "local": "start-test dev http-get://localhost:5173 cy:open",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
