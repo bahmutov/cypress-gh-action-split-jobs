@@ -63,5 +63,5 @@ jobs:
         with:
           # start the local server
           start: npm run serve
-          wait-on: "http://localhost:5000"
-          config: "baseUrl=http://localhost:5000"
+          wait-on: "http://localhost:4173"
+          config: "baseUrl=http://localhost:4173"
