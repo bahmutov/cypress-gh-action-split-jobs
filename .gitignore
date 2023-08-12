@@ -1,2 +1,7 @@
 node_modules/
 dist
+
+# Cypress temporary assets
+cypress/downloads
+cypress/screenshots
+cypress/videos
