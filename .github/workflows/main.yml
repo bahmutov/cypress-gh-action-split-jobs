@@ -13,7 +13,7 @@ jobs:
       # only install the dependencies using
       # https://github.com/cypress-io/github-action
       - name: Install 📦
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v6
         with:
           runTests: false
 
@@ -59,7 +59,7 @@ jobs:
 
       # reinstall dependencies and run Cypress tests
       - name: Cypress tests 🧪
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v6
         with:
           # start the local server
           start: npm run serve
