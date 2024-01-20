@@ -28,7 +28,7 @@
     "vite": "5.0.11"
   },
   "devDependencies": {
-    "cypress": "13.6.2",
+    "cypress": "13.6.3",
     "start-server-and-test": "2.0.3"
   }
 }
