@@ -28,7 +28,7 @@ jobs:
       # TIP: we want to avoid uploading node_modules since it is SLOW
       # https://glebbahmutov.com/blog/parallel-cypress-tests-gh-action/
       - name: Save build folder 🆙
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         # https://github.com/actions/upload-artifact#upload-an-entire-directory
         with:
           name: built
@@ -48,7 +48,7 @@ jobs:
 
       - name: Download the built folders ⏬
         # https://github.com/actions/download-artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: built
           # download all files into "dist" folder
