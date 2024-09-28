@@ -4,7 +4,7 @@ on: [push, pull_request]
 jobs:
   # this job installs dependencies and builds the "dist" folder
   install:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       # https://github.com/actions/checkout
       - name: Checkout 🛎️
@@ -39,7 +39,7 @@ jobs:
   # this job runs after the install job builds the "dist" folder
   # serves the "dist" folder and runs end-to-end Cypress tests
   ui-tests:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs: install
     steps:
       # https://github.com/actions/checkout
