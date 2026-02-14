@@ -8,7 +8,7 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: Checkout 🛎️
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # only install the dependencies using
       # https://github.com/cypress-io/github-action
@@ -44,7 +44,7 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: Checkout 🛎️
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Download the built folders ⏬
         # https://github.com/actions/download-artifact
