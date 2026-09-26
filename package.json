@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/bahmutov/cypress-gh-action-split-jobs#readme",
   "dependencies": {
-    "reveal.js": "5.2.1",
+    "reveal.js": "6.0.2",
     "vite": "8.3.1"
   },
   "devDependencies": {
